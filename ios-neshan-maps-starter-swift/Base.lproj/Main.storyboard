@@ -1,0 +1,1157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I4l-r9-F50">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontAwesome.ttf">
+            <string>FontAwesome</string>
+        </array>
+        <array key="IRANSansMobile.ttf">
+            <string>IRANSansMobile</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_neshan_maps_starter_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1064"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cb8-EI-Xnx">
+                                <rect key="frame" x="0.0" y="64" width="375" height="1000"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="32B-rQ-NXX">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_neshan_logo" translatesAutoresizingMaskIntoConstraints="NO" id="T3z-2A-woQ">
+                                                <rect key="frame" x="257" y="0.0" width="110" height="130"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="130" id="7X7-rb-QDz"/>
+                                                    <constraint firstAttribute="width" constant="110" id="9PZ-EZ-3rv"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نسخه 1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ze-nX-AEb">
+                                                <rect key="frame" x="8" y="86" width="49" height="13"/>
+                                                <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="10"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mdS-MI-lmI">
+                                                <rect key="frame" x="8" y="135" width="359" height="865"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lwZ-w2-2F9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="359" height="89"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eC7-7e-Xjl">
+                                                                <rect key="frame" x="0.0" y="0.0" width="172" height="89"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="Layer 2"/>
+                                                                <connections>
+                                                                    <segue destination="kA0-Su-cav" kind="show" id="Jhu-q0-dtA"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4h-yk-8JM">
+                                                                <rect key="frame" x="187" y="0.0" width="172" height="89"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="Layer 3"/>
+                                                                <connections>
+                                                                    <segue destination="FTY-6H-7da" kind="show" id="3yJ-tW-Yd4"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="MAg-6h-3VP">
+                                                        <rect key="frame" x="0.0" y="97" width="359" height="89"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qj8-Ot-QbN">
+                                                                <rect key="frame" x="0.0" y="0.0" width="172" height="89"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="Layer 4"/>
+                                                                <connections>
+                                                                    <segue destination="6iT-4G-NF4" kind="show" id="UQy-sg-Sle"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVT-Ob-f0x">
+                                                                <rect key="frame" x="187" y="0.0" width="172" height="89"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="Layer 5"/>
+                                                                <connections>
+                                                                    <segue destination="r7M-SA-NAs" kind="show" id="vPI-NL-ypv"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="v6t-Ey-hEj">
+                                                        <rect key="frame" x="0.0" y="194" width="359" height="89"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83d-Qa-0EX">
+                                                                <rect key="frame" x="0.0" y="0.0" width="172" height="89"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="Layer 6"/>
+                                                                <connections>
+                                                                    <segue destination="ZD5-02-Pam" kind="show" id="8LA-FE-zPi"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gme-L9-qMK">
+                                                                <rect key="frame" x="187" y="0.0" width="172" height="89"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="Layer 7"/>
+                                                                <connections>
+                                                                    <segue destination="cgm-zb-NFL" kind="show" id="kQX-4U-uTB"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hhz-fO-vd6">
+                                                        <rect key="frame" x="0.0" y="291" width="359" height="89"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNO-yS-Uja">
+                                                                <rect key="frame" x="0.0" y="0.0" width="172" height="89"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="Layer 8"/>
+                                                                <connections>
+                                                                    <segue destination="BSh-So-bUw" kind="show" id="f3C-wq-TAx"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4P-JI-PpZ">
+                                                                <rect key="frame" x="187" y="0.0" width="172" height="89"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="Layer 9"/>
+                                                                <connections>
+                                                                    <segue destination="7ra-q0-yKd" kind="show" id="jGv-Pd-k0x"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ9-HO-B5r">
+                                                        <rect key="frame" x="0.0" y="388" width="359" height="89"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36r-7n-qWg">
+                                                                <rect key="frame" x="0.0" y="0.0" width="172" height="89"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="Layer 10"/>
+                                                                <connections>
+                                                                    <segue destination="hKo-26-4IL" kind="show" id="0c8-Kc-gtf"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6GJ-kY-NmZ">
+                                                                <rect key="frame" x="187" y="0.0" width="172" height="89"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="Layer 11"/>
+                                                                <connections>
+                                                                    <segue destination="RLd-kd-WVr" kind="show" id="pB3-HQ-boC"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="2Qi-dx-ojH">
+                                                        <rect key="frame" x="0.0" y="485" width="359" height="89"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qr9-Vd-T4v">
+                                                                <rect key="frame" x="0.0" y="0.0" width="172" height="89"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="Layer 12"/>
+                                                                <connections>
+                                                                    <segue destination="vfn-TM-2gp" kind="show" id="ur1-nq-9kA"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDf-Xf-l6O">
+                                                                <rect key="frame" x="187" y="0.0" width="172" height="89"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="Layer 13"/>
+                                                                <connections>
+                                                                    <segue destination="8Cd-eq-5BN" kind="show" id="Hd9-Zp-UrO"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="FO2-mP-Cok">
+                                                        <rect key="frame" x="0.0" y="582" width="359" height="89"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vw1-iK-5dw">
+                                                                <rect key="frame" x="0.0" y="0.0" width="172" height="89"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="Layer 14"/>
+                                                                <connections>
+                                                                    <segue destination="Ji2-c1-g5f" kind="show" id="hWv-82-jAc"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wyc-lL-Mri">
+                                                                <rect key="frame" x="187" y="0.0" width="172" height="89"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="Layer 17"/>
+                                                                <connections>
+                                                                    <segue destination="gVW-WH-6p0" kind="show" id="RNi-Uc-Wae"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="39l-mb-OGW">
+                                                        <rect key="frame" x="93.5" y="679" width="172" height="89"/>
+                                                        <subviews>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ri2-uI-oKb">
+                                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="89"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="Layer 16"/>
+                                                                <connections>
+                                                                    <segue destination="gXt-1C-mvr" kind="show" id="6XO-2S-vhf"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDa-0j-MWh">
+                                                                <rect key="frame" x="0.0" y="0.0" width="172" height="89"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="Layer 18"/>
+                                                                <connections>
+                                                                    <segue destination="0mg-Bl-roz" kind="show" id="FoE-M8-61o"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="bottom" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Y7w-Ol-sIt">
+                                                        <rect key="frame" x="0.0" y="776" width="359" height="89"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63E-jE-DrF">
+                                                                <rect key="frame" x="0.0" y="51" width="172" height="38"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="Layer 20"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQJ-fV-t3k">
+                                                                <rect key="frame" x="187" y="51" width="172" height="38"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="Layer 21"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="ZZ9-HO-B5r" firstAttribute="top" secondItem="hhz-fO-vd6" secondAttribute="bottom" constant="8" id="Lkp-dq-kro"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Y7w-Ol-sIt" secondAttribute="bottom" id="z2X-Wd-ET9"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نشان" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zg5-eA-4yN">
+                                                <rect key="frame" x="8" y="51" width="244" height="28"/>
+                                                <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="زیرساخت توسعه‌ی نقشه" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQk-aX-FVX">
+                                                <rect key="frame" x="125.5" y="84" width="126.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="mdS-MI-lmI" firstAttribute="leading" secondItem="32B-rQ-NXX" secondAttribute="leading" constant="8" id="0bf-dr-UNb"/>
+                                            <constraint firstItem="3ze-nX-AEb" firstAttribute="leading" secondItem="mdS-MI-lmI" secondAttribute="leading" id="0h5-Tr-Kuf"/>
+                                            <constraint firstItem="T3z-2A-woQ" firstAttribute="leading" secondItem="zg5-eA-4yN" secondAttribute="trailing" constant="5" id="1uU-nV-atG"/>
+                                            <constraint firstAttribute="height" constant="1000" id="GXg-yJ-n1Q"/>
+                                            <constraint firstItem="zg5-eA-4yN" firstAttribute="leading" secondItem="mdS-MI-lmI" secondAttribute="leading" id="HM8-9k-KL9"/>
+                                            <constraint firstItem="NQk-aX-FVX" firstAttribute="leading" secondItem="3ze-nX-AEb" secondAttribute="trailing" priority="250" constant="10" id="MwC-5H-Mo6"/>
+                                            <constraint firstItem="zg5-eA-4yN" firstAttribute="centerY" secondItem="T3z-2A-woQ" secondAttribute="centerY" id="XZb-Hm-PpM"/>
+                                            <constraint firstItem="3ze-nX-AEb" firstAttribute="centerY" secondItem="NQk-aX-FVX" secondAttribute="centerY" id="cWT-11-Tat"/>
+                                            <constraint firstAttribute="trailing" secondItem="T3z-2A-woQ" secondAttribute="trailing" constant="8" id="ewP-He-oEc"/>
+                                            <constraint firstItem="NQk-aX-FVX" firstAttribute="top" secondItem="zg5-eA-4yN" secondAttribute="bottom" constant="5" id="g8g-R9-fXN"/>
+                                            <constraint firstItem="mdS-MI-lmI" firstAttribute="top" secondItem="T3z-2A-woQ" secondAttribute="bottom" constant="5" id="h31-k9-XaZ"/>
+                                            <constraint firstItem="T3z-2A-woQ" firstAttribute="leading" secondItem="NQk-aX-FVX" secondAttribute="trailing" constant="5" id="kpB-px-ivF"/>
+                                            <constraint firstItem="T3z-2A-woQ" firstAttribute="top" secondItem="32B-rQ-NXX" secondAttribute="top" id="mwB-XB-Acp"/>
+                                            <constraint firstAttribute="trailing" secondItem="mdS-MI-lmI" secondAttribute="trailing" constant="8" id="qdz-Sc-PRL"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="32B-rQ-NXX" firstAttribute="top" secondItem="Cb8-EI-Xnx" secondAttribute="top" id="7fe-Om-rCX"/>
+                                    <constraint firstAttribute="bottom" secondItem="32B-rQ-NXX" secondAttribute="bottom" id="GVx-q3-BGN"/>
+                                    <constraint firstItem="32B-rQ-NXX" firstAttribute="leading" secondItem="Cb8-EI-Xnx" secondAttribute="leading" id="ImL-Kb-ylU"/>
+                                    <constraint firstAttribute="trailing" secondItem="32B-rQ-NXX" secondAttribute="trailing" id="eDF-ZE-l4C"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="32B-rQ-NXX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="J8n-Wf-pQo"/>
+                            <constraint firstItem="Cb8-EI-Xnx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="K6j-HU-4jl"/>
+                            <constraint firstItem="Cb8-EI-Xnx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="K8F-7G-fco"/>
+                            <constraint firstItem="Cb8-EI-Xnx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="QEg-GJ-ceQ"/>
+                            <constraint firstItem="Cb8-EI-Xnx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mgD-cA-7fi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8M4-vR-YoZ"/>
+                    <size key="freeformSize" width="375" height="1064"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821.60000000000002" y="71.964017991004496"/>
+        </scene>
+        <!--Change Camera Bearing Controller-->
+        <scene sceneID="1LE-pu-zuI">
+            <objects>
+                <viewController id="ZD5-02-Pam" customClass="ChangeCameraBearingController" customModule="ios_neshan_maps_starter_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rX3-Kr-DrC" customClass="NTMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVC-rV-ehY">
+                                <rect key="frame" x="16" y="94" width="343" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="۱۸۰- درجه" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDW-Np-gbA">
+                                        <rect key="frame" x="5" y="25.5" width="58" height="19"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="۱۸۰ درجه" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWr-Qx-EcZ">
+                                        <rect key="frame" x="284" y="25.5" width="54" height="19"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-179" maxValue="180" translatesAutoresizingMaskIntoConstraints="NO" id="OPD-E9-Ups">
+                                        <rect key="frame" x="71" y="20" width="201" height="31"/>
+                                        <connections>
+                                            <action selector="sliderChanged:" destination="ZD5-02-Pam" eventType="valueChanged" id="yK8-qW-DVB"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="SDW-Np-gbA" firstAttribute="centerY" secondItem="hVC-rV-ehY" secondAttribute="centerY" id="4jD-L1-cCW"/>
+                                    <constraint firstItem="VWr-Qx-EcZ" firstAttribute="centerY" secondItem="hVC-rV-ehY" secondAttribute="centerY" id="5hx-9E-yM9"/>
+                                    <constraint firstItem="OPD-E9-Ups" firstAttribute="top" secondItem="hVC-rV-ehY" secondAttribute="top" constant="20" id="GRc-vk-Noc"/>
+                                    <constraint firstItem="SDW-Np-gbA" firstAttribute="leading" secondItem="hVC-rV-ehY" secondAttribute="leading" constant="5" id="TYZ-rw-TeI"/>
+                                    <constraint firstItem="VWr-Qx-EcZ" firstAttribute="leading" secondItem="OPD-E9-Ups" secondAttribute="trailing" constant="14" id="VTb-md-iPZ"/>
+                                    <constraint firstItem="OPD-E9-Ups" firstAttribute="leading" secondItem="SDW-Np-gbA" secondAttribute="trailing" constant="10" id="hxx-xB-ucU"/>
+                                    <constraint firstAttribute="trailing" secondItem="VWr-Qx-EcZ" secondAttribute="trailing" constant="5" id="hyZ-Mj-cpC"/>
+                                    <constraint firstAttribute="height" constant="70" id="lii-m2-qtF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="2" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTx-qb-Tbk">
+                                <rect key="frame" x="104" y="600" width="167" height="47"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" تغییر جهت" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKP-cS-nM5">
+                                        <rect key="frame" x="82" y="12" width="81" height="23"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VU7-w4-wk6">
+                                        <rect key="frame" x="25" y="8" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="toggleCameraBearing:" destination="ZD5-02-Pam" eventType="valueChanged" id="pcs-OG-FjI"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fKP-cS-nM5" firstAttribute="leading" secondItem="VU7-w4-wk6" secondAttribute="trailing" constant="8" id="AFX-oF-ryc"/>
+                                    <constraint firstItem="fKP-cS-nM5" firstAttribute="leading" secondItem="VU7-w4-wk6" secondAttribute="trailing" constant="8" id="Lif-7W-Zbw"/>
+                                    <constraint firstAttribute="bottom" secondItem="fKP-cS-nM5" secondAttribute="bottom" constant="12" id="Qnp-cW-sq0"/>
+                                    <constraint firstAttribute="trailing" secondItem="fKP-cS-nM5" secondAttribute="trailing" constant="4" id="QwX-Vg-khc"/>
+                                    <constraint firstItem="VU7-w4-wk6" firstAttribute="leading" secondItem="WTx-qb-Tbk" secondAttribute="leading" constant="25" id="Xwq-NE-AMe"/>
+                                    <constraint firstItem="VU7-w4-wk6" firstAttribute="top" secondItem="WTx-qb-Tbk" secondAttribute="top" constant="8" id="ZDo-2p-xiw"/>
+                                    <constraint firstAttribute="bottom" secondItem="VU7-w4-wk6" secondAttribute="bottom" constant="8" id="ZK0-ej-czJ"/>
+                                    <constraint firstItem="fKP-cS-nM5" firstAttribute="top" secondItem="WTx-qb-Tbk" secondAttribute="top" constant="12" id="v8q-0W-N9a"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="2" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1am-VY-wNZ" firstAttribute="trailing" secondItem="WTx-qb-Tbk" secondAttribute="trailing" constant="104" id="4k7-iF-ZQE"/>
+                            <constraint firstItem="WTx-qb-Tbk" firstAttribute="leading" secondItem="1am-VY-wNZ" secondAttribute="leading" constant="104" id="AYg-Y0-2H1"/>
+                            <constraint firstItem="WTx-qb-Tbk" firstAttribute="centerX" secondItem="rX3-Kr-DrC" secondAttribute="centerX" id="CUJ-mo-ulw"/>
+                            <constraint firstItem="hVC-rV-ehY" firstAttribute="leading" secondItem="1am-VY-wNZ" secondAttribute="leading" constant="16" id="HqJ-yN-Ohf"/>
+                            <constraint firstItem="hVC-rV-ehY" firstAttribute="top" secondItem="1am-VY-wNZ" secondAttribute="top" constant="30" id="NEt-DJ-0ln"/>
+                            <constraint firstItem="1am-VY-wNZ" firstAttribute="bottom" secondItem="WTx-qb-Tbk" secondAttribute="bottom" constant="20" id="Ujr-K9-fym"/>
+                            <constraint firstItem="hVC-rV-ehY" firstAttribute="centerX" secondItem="rX3-Kr-DrC" secondAttribute="centerX" id="jSu-Yu-zqG"/>
+                            <constraint firstItem="1am-VY-wNZ" firstAttribute="trailing" secondItem="hVC-rV-ehY" secondAttribute="trailing" constant="16" id="zXm-np-a0b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1am-VY-wNZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="bearingSlider" destination="OPD-E9-Ups" id="qjO-ie-R6E"/>
+                        <outlet property="map" destination="rX3-Kr-DrC" id="4es-jm-Ijr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iAP-A1-p5m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3016.8000000000002" y="-1090.704647676162"/>
+        </scene>
+        <!--User Location Controller-->
+        <scene sceneID="3RA-I7-ZOI">
+            <objects>
+                <viewController id="BSh-So-bUw" customClass="UserLocationController" customModule="ios_neshan_maps_starter_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rRc-LW-wYv" customClass="NTMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qco-vB-Aqz">
+                                <rect key="frame" x="309" y="597" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="25"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="self.imageView.contentMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="2" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="focusOnUserLocation:" destination="BSh-So-bUw" eventType="touchUpInside" id="b43-D7-NHz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="g0a-de-gpc"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="rRc-LW-wYv" id="NKy-lk-mIW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G14-bY-viS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3017" y="-431"/>
+        </scene>
+        <!--Online Layer Controller-->
+        <scene sceneID="zhd-rh-AK7">
+            <objects>
+                <viewController id="hKo-26-4IL" customClass="OnlineLayerController" customModule="ios_neshan_maps_starter_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Grf-wH-R5G" customClass="NTMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cjN-cL-nBx">
+                                <rect key="frame" x="104" y="601" width="167" height="46"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="لایه آنلاین" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Us-Wa-1Vt">
+                                        <rect key="frame" x="82" y="12" width="69" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A6I-cw-UaE">
+                                        <rect key="frame" x="17" y="8" width="49" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <connections>
+                                            <action selector="toggleOnlineLayer:" destination="hKo-26-4IL" eventType="valueChanged" id="CYT-1z-gj0"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="2" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="b2B-Wr-IhC"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="Grf-wH-R5G" id="TiF-LR-liT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqw-Ba-KSj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3017" y="321"/>
+        </scene>
+        <!--Layer Controller-->
+        <scene sceneID="0gJ-Yk-nha">
+            <objects>
+                <viewController id="RLd-kd-WVr" customClass="POILayerController" customModule="ios_neshan_maps_starter_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="768-eI-Fqq" customClass="NTMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYQ-f8-sv3">
+                                <rect key="frame" x="259" y="567" width="100" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <state key="normal" image="map_style_standard_day"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="self.imageView.contentMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="2" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeStyle:" destination="RLd-kd-WVr" eventType="touchUpInside" id="ph1-eH-4V6"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4YE-Be-VqC">
+                                <rect key="frame" x="16" y="601" width="167" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="لایه POI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgE-tr-SJD">
+                                        <rect key="frame" x="82" y="12" width="56" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="25W-cr-3ZW">
+                                        <rect key="frame" x="27" y="8" width="49" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <connections>
+                                            <action selector="togglePOILayer:" destination="RLd-kd-WVr" eventType="valueChanged" id="JEt-zO-5iv"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="2" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fT2-1A-IM8"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="768-eI-Fqq" id="R02-gG-nVR"/>
+                        <outlet property="themePreview" destination="oYQ-f8-sv3" id="ga6-8g-JDS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pf1-kM-ynw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4009" y="320"/>
+        </scene>
+        <!--Database Layer Controller-->
+        <scene sceneID="iZn-6v-73k">
+            <objects>
+                <viewController id="vfn-TM-2gp" customClass="DatabaseLayerController" customModule="ios_neshan_maps_starter_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ekf-pJ-E8l" customClass="NTMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dTq-Jz-hPI">
+                                <rect key="frame" x="89" y="601" width="197" height="46"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="لایه دیتابیس" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gox-kY-Y3Y">
+                                        <rect key="frame" x="96" y="12" width="104" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T2y-XE-uxh">
+                                        <rect key="frame" x="34" y="8" width="49" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <connections>
+                                            <action selector="toggleDatabaseLayer:" destination="vfn-TM-2gp" eventType="valueChanged" id="78z-KN-fPC"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="2" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lNq-Uc-NyT"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="ekf-pJ-E8l" id="CA3-qY-kOm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mRI-KQ-6Je" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3017" y="1078"/>
+        </scene>
+        <!--Traffic Layer Controller-->
+        <scene sceneID="o3d-ub-2p0">
+            <objects>
+                <viewController id="7ra-q0-yKd" customClass="TrafficLayerController" customModule="ios_neshan_maps_starter_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GdT-6e-OHI" customClass="NTMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OBg-ax-qJL">
+                                <rect key="frame" x="102.5" y="597" width="170" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="لایه ترافیک" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Llx-zD-YWP">
+                                        <rect key="frame" x="81" y="14" width="81" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KiL-gP-LjA">
+                                        <rect key="frame" x="14" y="10" width="49" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <connections>
+                                            <action selector="toggleTrafficLayer:" destination="7ra-q0-yKd" eventType="valueChanged" id="bQR-4r-yrU"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="6je-lb-H8w"/>
+                                    <constraint firstAttribute="height" constant="50" id="8MG-nT-nkk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="2" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qR3-rp-45A" firstAttribute="bottom" secondItem="OBg-ax-qJL" secondAttribute="bottom" constant="20" id="29x-kX-zHX"/>
+                            <constraint firstItem="qR3-rp-45A" firstAttribute="trailing" secondItem="OBg-ax-qJL" secondAttribute="trailing" constant="102.5" id="YzC-OD-Ui0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qR3-rp-45A"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="GdT-6e-OHI" id="hzE-c3-274"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WVH-Fw-yO0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4009" y="-432"/>
+        </scene>
+        <!--Add Marker Controller-->
+        <scene sceneID="N4Q-7d-QnR">
+            <objects>
+                <viewController id="kA0-Su-cav" customClass="AddMarkerController" customModule="ios_neshan_maps_starter_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Aq-vD-Vbl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ms5-3p-9gX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="veH-5v-uxR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3017" y="-2620"/>
+        </scene>
+        <!--Draw Line Controller-->
+        <scene sceneID="4Lp-kn-kN3">
+            <objects>
+                <viewController id="FTY-6H-7da" customClass="DrawLineController" customModule="ios_neshan_maps_starter_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pmG-U9-pvQ" customClass="NTMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaU-EQ-k0m">
+                                <rect key="frame" x="140" y="607" width="95" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="Wuj-tG-3Hr"/>
+                                    <constraint firstAttribute="height" constant="40" id="lXP-Bv-LUP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="17"/>
+                                <state key="normal" title="رسم خط"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="2" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="drawLineGeom:" destination="FTY-6H-7da" eventType="touchUpInside" id="xoE-ud-zrD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GaU-EQ-k0m" firstAttribute="centerX" secondItem="pmG-U9-pvQ" secondAttribute="centerX" id="qke-Xo-yao"/>
+                            <constraint firstItem="ATM-y1-WVo" firstAttribute="bottom" secondItem="GaU-EQ-k0m" secondAttribute="bottom" priority="750" constant="20" id="yM7-a3-EFA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ATM-y1-WVo"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="pmG-U9-pvQ" id="iU2-Z2-se2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NFn-FZ-Ss3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4008.8000000000002" y="-2620.8395802098953"/>
+        </scene>
+        <!--Change Style Controller-->
+        <scene sceneID="JSA-k4-IOG">
+            <objects>
+                <viewController id="cgm-zb-NFL" customClass="ChangeStyleController" customModule="ios_neshan_maps_starter_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5uS-kl-E1P" customClass="NTMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSE-7w-McE">
+                                <rect key="frame" x="259" y="567" width="100" height="80"/>
+                                <state key="normal" image="map_style_standard_day"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="self.imageView.contentMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="2" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeStyle:" destination="cgm-zb-NFL" eventType="touchUpInside" id="4hP-n1-LOa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xM9-7d-BNG" firstAttribute="trailing" secondItem="jSE-7w-McE" secondAttribute="trailing" constant="16" id="SF9-Bi-rwE"/>
+                            <constraint firstItem="xM9-7d-BNG" firstAttribute="bottom" secondItem="jSE-7w-McE" secondAttribute="bottom" constant="20" id="ehr-dS-2nV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xM9-7d-BNG"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="5uS-kl-E1P" id="sUt-MW-gyM"/>
+                        <outlet property="themePreveiw" destination="jSE-7w-McE" id="AeT-8v-RsZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nk0-o0-P1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4009" y="-1090"/>
+        </scene>
+        <!--Networking Controller-->
+        <scene sceneID="Dt5-5G-cwe">
+            <objects>
+                <viewController id="8Cd-eq-5BN" customClass="APIAFNetworkingController" customModule="ios_neshan_maps_starter_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hOZ-eY-hK6" customClass="NTMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lch-mz-SRT">
+                                <rect key="frame" x="-4" y="555" width="383" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="محله" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQH-Ay-aGo">
+                                        <rect key="frame" x="20" y="8" width="343" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="آدرس" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6B-OX-gSX">
+                                        <rect key="frame" x="20" y="50" width="343" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gT5-W4-8f6"/>
+                    </view>
+                    <connections>
+                        <outlet property="addressDetails" destination="e6B-OX-gSX" id="bpM-HV-swZ"/>
+                        <outlet property="addressTitle" destination="ZQH-Ay-aGo" id="oTS-Kg-sEF"/>
+                        <outlet property="map" destination="hOZ-eY-hK6" id="iXw-wU-k7l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3mW-Jg-HiW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4008.8000000000002" y="1077.2113943028487"/>
+        </scene>
+        <!--Add Label Controller-->
+        <scene sceneID="hF9-0N-GPU">
+            <objects>
+                <viewController id="gVW-WH-6p0" customClass="AddLabelController" customModule="ios_neshan_maps_starter_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XwP-PT-oZy" customClass="NTMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="SdY-r5-tlc"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="XwP-PT-oZy" id="8Af-Pp-Jqi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vvG-Q8-XQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4009" y="1869"/>
+        </scene>
+        <!--Cache Controller-->
+        <scene sceneID="mGa-H1-t6M">
+            <objects>
+                <viewController id="gXt-1C-mvr" customClass="CacheController" customModule="ios_neshan_maps_starter_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SMP-Ep-JvV" customClass="NTMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="JEH-D1-bA2"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="SMP-Ep-JvV" id="Xx6-R2-NL3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nEI-6R-i37" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3017" y="2612"/>
+        </scene>
+        <!--Remove Marker Controller-->
+        <scene sceneID="CE4-po-40b">
+            <objects>
+                <viewController id="0mg-Bl-roz" customClass="RemoveMarkerController" customModule="ios_neshan_maps_starter_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oiS-9z-eKj" customClass="NTMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="TB1-ck-yYW"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="oiS-9z-eKj" id="QPX-UI-g9L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FZL-cg-UNI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4009" y="2612"/>
+        </scene>
+        <!--Draw Polygon Controller-->
+        <scene sceneID="PP6-TX-eCP">
+            <objects>
+                <viewController id="6iT-4G-NF4" customClass="DrawPolygonController" customModule="ios_neshan_maps_starter_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OT0-qg-SYu" customClass="NTMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pn-yl-Wxn">
+                                <rect key="frame" x="135" y="607" width="105" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ASx-sF-ceM"/>
+                                    <constraint firstAttribute="width" constant="105" id="adZ-yn-AqI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="17"/>
+                                <state key="normal" title="رسم چند ضلعی"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="2" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="drawPolygonGeom:" destination="6iT-4G-NF4" eventType="touchUpInside" id="ThV-zJ-nmR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0pn-yl-Wxn" firstAttribute="centerX" secondItem="OT0-qg-SYu" secondAttribute="centerX" id="BJf-vo-jRv"/>
+                            <constraint firstItem="Den-Yi-aoC" firstAttribute="bottom" secondItem="0pn-yl-Wxn" secondAttribute="bottom" constant="20" id="aZ5-Hs-R0V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Den-Yi-aoC"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="OT0-qg-SYu" id="kDX-Ub-JeD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2f9-68-2lr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3017" y="-1841"/>
+        </scene>
+        <!--Change Camera Tilt Controller-->
+        <scene sceneID="lfe-CU-5Q1">
+            <objects>
+                <viewController id="r7M-SA-NAs" customClass="ChangeCameraTiltController" customModule="ios_neshan_maps_starter_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cvv-vg-exu" customClass="NTMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfe-D2-7ca">
+                                <rect key="frame" x="20" y="94" width="335" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="۹۰ درجه" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARD-Nh-8H3">
+                                        <rect key="frame" x="270.5" y="24.5" width="54.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="۳۰ درجه" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiW-LV-XN5">
+                                        <rect key="frame" x="10" y="24.5" width="57" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="90" minValue="30" maxValue="90" translatesAutoresizingMaskIntoConstraints="NO" id="eBO-Iv-ecI">
+                                        <rect key="frame" x="82" y="20" width="171" height="31"/>
+                                        <connections>
+                                            <action selector="sliderChanged:" destination="r7M-SA-NAs" eventType="valueChanged" id="VD5-bV-h8u"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ARD-Nh-8H3" secondAttribute="trailing" constant="10" id="2Fm-2u-fgn"/>
+                                    <constraint firstAttribute="height" constant="70" id="5pI-ms-L7I"/>
+                                    <constraint firstItem="eBO-Iv-ecI" firstAttribute="centerY" secondItem="dfe-D2-7ca" secondAttribute="centerY" id="AT2-PN-esc"/>
+                                    <constraint firstItem="ZiW-LV-XN5" firstAttribute="centerY" secondItem="dfe-D2-7ca" secondAttribute="centerY" id="ETh-Z7-arv"/>
+                                    <constraint firstItem="eBO-Iv-ecI" firstAttribute="leading" secondItem="ZiW-LV-XN5" secondAttribute="trailing" constant="17" id="O25-cj-HGN"/>
+                                    <constraint firstItem="eBO-Iv-ecI" firstAttribute="top" secondItem="dfe-D2-7ca" secondAttribute="top" constant="20" id="dAY-gr-CZR"/>
+                                    <constraint firstItem="ZiW-LV-XN5" firstAttribute="leading" secondItem="dfe-D2-7ca" secondAttribute="leading" constant="10" id="dJt-3b-b4F"/>
+                                    <constraint firstItem="eBO-Iv-ecI" firstAttribute="centerX" secondItem="dfe-D2-7ca" secondAttribute="centerX" id="feh-bB-5M1"/>
+                                    <constraint firstItem="ARD-Nh-8H3" firstAttribute="centerY" secondItem="dfe-D2-7ca" secondAttribute="centerY" id="nPG-UX-N0B"/>
+                                    <constraint firstItem="ARD-Nh-8H3" firstAttribute="leading" secondItem="eBO-Iv-ecI" secondAttribute="trailing" constant="19.5" id="ovT-8b-LFe"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="2" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dfe-D2-7ca" secondAttribute="trailing" constant="20" id="NiR-xM-P2N"/>
+                            <constraint firstItem="dfe-D2-7ca" firstAttribute="leading" secondItem="cvv-vg-exu" secondAttribute="leading" constant="20" id="cFe-9e-hpe"/>
+                            <constraint firstItem="dfe-D2-7ca" firstAttribute="top" secondItem="yTK-v1-225" secondAttribute="top" constant="30" id="hY8-XP-2jo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yTK-v1-225"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="cvv-vg-exu" id="Nvc-RY-PU7"/>
+                        <outlet property="tiltSlider" destination="eBO-Iv-ecI" id="57r-mI-2cv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Npc-te-w7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4008.8000000000002" y="-1841.8290854572715"/>
+        </scene>
+        <!--URL Session Controller-->
+        <scene sceneID="rC8-0H-ni1">
+            <objects>
+                <viewController id="Ji2-c1-g5f" customClass="APIURLSessionController" customModule="ios_neshan_maps_starter_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XlF-G4-Rcm" customClass="NTMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ivl-4Q-6eX">
+                                <rect key="frame" x="-4" y="555" width="383" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="محله" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IU-EA-MlE">
+                                        <rect key="frame" x="20" y="8" width="343" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="آدرس" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaO-Ux-uBS">
+                                        <rect key="frame" x="20" y="50" width="343" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="MdD-La-qsQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="addressDetails" destination="UaO-Ux-uBS" id="fZI-sV-fUz"/>
+                        <outlet property="addressTitle" destination="3IU-EA-MlE" id="bk2-Tc-dpf"/>
+                        <outlet property="map" destination="XlF-G4-Rcm" id="vAC-U3-8wr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rbc-ud-gBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3016.8000000000002" y="1869.7151424287858"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hcB-Ly-s9q">
+            <objects>
+                <navigationController id="I4l-r9-F50" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5kg-ai-oEk">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="d64-gS-cpq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2G9-Ck-e3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39" y="74"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Layer 10" width="172" height="87"/>
+        <image name="Layer 11" width="172" height="87"/>
+        <image name="Layer 12" width="172" height="87"/>
+        <image name="Layer 13" width="173" height="89"/>
+        <image name="Layer 14" width="172" height="89"/>
+        <image name="Layer 16" width="172" height="89"/>
+        <image name="Layer 17" width="172" height="89"/>
+        <image name="Layer 18" width="172" height="89"/>
+        <image name="Layer 2" width="172" height="87"/>
+        <image name="Layer 20" width="173" height="38"/>
+        <image name="Layer 21" width="176" height="38"/>
+        <image name="Layer 3" width="172" height="87"/>
+        <image name="Layer 4" width="172" height="87"/>
+        <image name="Layer 5" width="172" height="87"/>
+        <image name="Layer 6" width="172" height="87"/>
+        <image name="Layer 7" width="172" height="87"/>
+        <image name="Layer 8" width="172" height="87"/>
+        <image name="Layer 9" width="172" height="87"/>
+        <image name="ic_neshan_logo" width="131" height="131"/>
+        <image name="map_style_standard_day" width="100" height="80"/>
+    </resources>
+</document>
