@@ -23,12 +23,12 @@ class DrawPolygonController: UIViewController {
         super.viewDidLoad()
         
         // Initializing mapView element
-        initMaps()
+        initMap()
 
     }
     
     // MARK: - Initializing Map
-    func initMaps() {
+    func initMap() {
         // Creating a VectorElementLayer (called markerLayer) to add all markers ti it and adding it to map's layers
         polygonLayer = NTNeshanServices.createVectorElementLayer()
         map?.getLayers()?.add(polygonLayer)

@@ -19,10 +19,10 @@ class TrafficLayerController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        initMaps()
+        initMap()
     }
 
-    private func initMaps() {
+    private func initMap() {
         // add STANDARD_DAY map to layer BASE_MAP_INDEX
         map?.getOptions()?.setZoom(NTRange(min: 4.5, max: 18))
         let baseMap: NTLayer = NTNeshanServices.createBaseMap(NTNeshanMapStyle.STANDARD_DAY)

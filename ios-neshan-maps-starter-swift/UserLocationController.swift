@@ -32,7 +32,7 @@ class UserLocationController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        initMaps()
+        initMap()
         initLocation()
     }
     
@@ -46,7 +46,7 @@ class UserLocationController: UIViewController, CLLocationManagerDelegate {
         stopLocationUpdates()
     }
     
-    func initMaps() {
+    func initMap() {
         // Creating a VectorElementLayer(called userMarkerLayer) to add user marker to it and adding it to map's layers
         userMarkerLayer = NTNeshanServices.createVectorElementLayer()
         map.getLayers()?.add(userMarkerLayer)

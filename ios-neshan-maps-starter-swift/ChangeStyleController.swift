@@ -21,11 +21,11 @@ class ChangeStyleController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        initMaps()
+        initMap()
         validateThemePreview()
     }
     
-    func initMaps() {
+    func initMap() {
         // add STANDARD_DAY map to layer BASE_MAP_INDEX
         map?.getOptions()?.setZoom(NTRange(min: 4.5, max: 18))
         map?.getLayers()?.insert(BASE_MAP_INDEX, layer: NTNeshanServices.createBaseMap(mapStyle))

@@ -20,14 +20,14 @@ class OnlineLayerController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        initMaps()
+        initMap()
         
         if checkInternet() {
             download("https://api.neshan.org/points.geojson")
         }
     }
     
-    private func initMaps() {
+    private func initMap() {
         // Creating a VectorElementLayer(called markerLayer) to add all markers to it and adding it to map's layers
         markerLayer = NTNeshanServices.createVectorElementLayer()
         

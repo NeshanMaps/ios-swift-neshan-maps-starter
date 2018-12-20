@@ -28,7 +28,7 @@ class AddMarkerController: UIViewController {
         super.viewDidLoad()
         
         // Initializing mapView element
-        initMaps()
+        initMap()
         
         // when long clicked on map, a marker is added in clicked location
         // MapEventListener gets all events on map, including single tap, double tap, long press, etc
@@ -49,7 +49,7 @@ class AddMarkerController: UIViewController {
     }
     
     // MARK: - Initializing Map
-    func initMaps() {
+    func initMap() {
         // Creating a VectorElementLayer (called markerLayer) to add all markers ti it and adding it to map's layers
         markerLayer = NTNeshanServices.createVectorElementLayer()
         map?.getLayers()?.add(markerLayer)
