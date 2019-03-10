@@ -38,11 +38,11 @@ class ChangeStyleController: UIViewController {
     func validateThemePreview() {
         switch mapStyle {
         case .STANDARD_DAY:
-            themePreveiw.setImage(UIImage(named: "map_style_standard_night"), for: UIControl.State.normal)
+            themePreveiw.setImage(UIImage(named: "map_style_standard_night"), for: .normal)
         case .STANDARD_NIGHT:
-            themePreveiw.setImage(UIImage(named: "map_style_neshan"), for: UIControl.State.normal)
+            themePreveiw.setImage(UIImage(named: "map_style_neshan"), for: .normal)
         case .NESHAN:
-            themePreveiw.setImage(UIImage(named: "map_style_standard_day"), for: UIControl.State.normal)
+            themePreveiw.setImage(UIImage(named: "map_style_standard_day"), for: .normal)
         }
         NeshanHelper.toast(self, message: mapStyle == .STANDARD_DAY ? "روز استاندارد" : mapStyle == .STANDARD_NIGHT ? "شب استاندارد" : "نشان")
     }

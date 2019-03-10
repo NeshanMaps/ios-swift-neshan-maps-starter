@@ -32,13 +32,13 @@ class POILayerController: UIViewController {
     private func validateThemePreview() {
         switch mapStyle {
             case .STANDARD_DAY:
-                themePreview.setImage(UIImage(named: "map_style_standard_night"), for: UIControl.State.normal)
+                themePreview.setImage(UIImage(named: "map_style_standard_night"), for: .normal)
                 break
             case .STANDARD_NIGHT:
-                themePreview.setImage(UIImage(named: "map_style_neshan"), for: UIControl.State.normal)
+                themePreview.setImage(UIImage(named: "map_style_neshan"), for: .normal)
                 break
             case .NESHAN:
-                themePreview.setImage(UIImage(named: "map_style_standard_day"), for: UIControl.State.normal)
+                themePreview.setImage(UIImage(named: "map_style_standard_day"), for: .normal)
                 break
         }
     }
